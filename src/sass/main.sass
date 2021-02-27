@@ -1,0 +1,495 @@
+@import reset.scss
+
+// font-family: 'Roboto Condensed', sans-serif основной текст
+// font-family: 'Fira Sans', sans-serif заглавный текс
+// переменная fonttitle. 
+
+$branded: #332208
+$white: #FEFEFE
+$dark: #1B1818
+$accent: #C5AC2D
+
+$fonttitle: 'Fira Sans', sans-serif
+
+a
+    text-decoration: none
+
+%top_btn
+    background-color: $accent
+    color: $white
+    font-size: 16px
+    line-height: 19px
+    text-align: center
+    text-transform: uppercase
+    display: inline-block
+    padding: 15px 18px
+    border: 1px solid transparent
+%top_hover
+    color: $accent
+    background-color: $white
+    border: 1px solid $accent
+
+.header
+    background-color: $branded
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 10px
+
+.header_inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100px
+
+body
+    font-size: 16px
+    line-height: 19px
+    font-family: 'Roboto Condensed', sans-serif
+    // font-family: 'Fira Sans', sans-serif
+
+.menu_list
+    display: flex
+
+.menu_item
+    margin-right: 30px
+    &:last-child
+        margin: 0
+
+.menu_list-link
+    text-transform: uppercase
+    font-size: 18px
+    line-height: 21px
+    color: $white
+    padding-bottom: 5px
+    transition: .5s
+    border-bottom: 1px solid transparent
+    font-weight: normal
+    &:hover
+        border-bottom: 1px solid $white
+
+.phone
+    font-size: 18px
+    line-height: 21px
+    color: $white
+    font-weight: normal
+
+.top
+    padding-bottom: 100px
+
+.top_info
+    display: flex
+    padding: 50px 0 30px
+
+.top_content
+    text-align: center
+    padding-top: 90px
+    width: 50%
+
+.top_title
+    font-size: 48px
+    line-height: 58px
+    color: $dark
+    font-family: $fonttitle
+    font-weight: 500
+    margin: 0 auto 20px
+    max-width: 455px
+
+.top_text
+    font-size: 24px
+    line-height: 28px
+    color: $dark
+    margin: 0 auto 60px
+    max-width: 470px
+
+.application_btn
+    transition: .5s
+    @extend %top_btn
+    &:hover
+        @extend %top_hover
+
+.swiper-container
+    width: 100%
+    height: 420px
+
+.swiper-pagination
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.swiper-container-vertical
+    .swiper-pagination-bullets
+        .swiper-pagination-bullet
+            width: 8px
+            height: 8px
+            background: $dark
+            opacity: 1
+            &-active
+                width: 16px
+                height: 16px
+
+.swiper-container-vertical
+    .swiper-pagination-bullets
+        right: 1px !important
+        top: 53% !important
+
+.top_slider
+    max-width: 600px
+    width: 100%
+    display: flex
+    flex-direction: column
+    text-align: center
+
+.top_slider-text
+    padding-left: 100px
+.slider_text-main
+    font-family: $fonttitle
+    font-weight: normal
+    margin-top: 10px
+    text-align: center
+    span
+        padding-left: 15px
+
+.top_bottom
+    display: flex
+    align-items: flex-end
+.top_items
+    width: 50%
+    display: flex
+    justify-content: space-around
+
+.top_item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    text-align: center
+    border: 1px solid #332208
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25))
+    width: 150px
+    height: 150px
+    padding: 0 10px
+    cursor: pointer
+    transition: .5s ease all
+    &:hover
+        transform: scale(1.25)
+
+.top_links
+    margin-left: 165px
+
+.top_link
+    color: $dark
+    border-bottom: 1px solid #1B1818
+    margin-left: 20px
+    &:first-child
+        margin: 0
+
+.rent
+    padding: 100px 0
+
+.rent_inner
+    display: flex
+    justify-content: space-between
+
+.rent_content
+    width: 300px
+
+.rent_title
+    font-family: $fonttitle
+    font-size: 24px
+    font-weight: 500
+    line-height: 29px
+    color: $dark
+    margin-bottom: 30px
+
+.rent_main-text
+    margin-bottom: 20px
+    &:nth-last-child(2)
+        margin-bottom: 40px
+
+.rent_items
+    border: 1px solid #332208
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25))
+    width: 250px
+    min-height: 350px
+    padding: 0 30px 20px
+    text-align: center
+
+.rent_item-num
+    font-family: $fonttitle
+    opacity: 0.05
+    font-size: 96px
+    line-height: 115px
+
+.rent_item-title
+    font-family: $fonttitle
+    color: $dark
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    margin-bottom: 30px
+
+.benefits
+    padding: 100px 0
+
+.benefits_title
+    font-family: $fonttitle
+    font-weight: 500
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 35px
+
+.benefits_inner
+    display: flex
+    align-items: center
+
+.benefits_items
+    display: flex
+
+.benefits_list
+    width: 300px
+
+.benefits_list-item
+    margin-bottom: 27px
+    padding-right: 26px
+    position: relative
+    text-align: right
+    &::after
+        content: ""
+        width: 16px
+        height: 16px
+        background: $dark
+        border-radius: 10px
+        position: absolute
+        right: 0
+        top: 2px
+    &:nth-child(1)
+        margin-right: 10px
+    &:nth-child(7)
+        margin-right: 10px
+    &:nth-child(2)
+        margin-right: 55px
+    &:nth-child(6)
+        margin-right: 55px
+    &:nth-child(3)
+        margin-right: 105px
+    &:nth-child(5)
+        margin-right: 105px
+    &:nth-child(4)
+        margin-right: 150px
+
+.benefits_content
+    text-align: right
+
+.benefits_main-text
+    margin-bottom: 30px
+
+.video_popup
+    background-color: $accent
+    color: $white
+    text-transform: uppercase
+    padding: 6px 34px 6px 64px
+    text-align: center
+    display: inline-block
+    position: relative
+    max-width: 200px
+    &::before
+        content: ""
+        width: 25px
+        height: 25px
+        position: absolute
+        background-image: url(../images/videopop.svg)
+        bottom: 12px
+        left: 34px
+
+.reviews
+    background: $branded
+    padding: 100px 0
+    color: $white
+
+.reviews_top-slider
+    width: 100%
+    height: 100%
+    overflow: hidden
+    position: relative
+
+.top_slider-wrapper
+    display: flex
+    justify-content: space-between
+    width: 100%
+    height: 100%
+    
+
+.slide_item
+    display: flex
+    justify-content: space-between
+    flex-shrink: 0
+    width: 100%
+    height: 100%
+    margin-bottom: 45px
+
+.reviews_title
+    font-size: 24px
+    line-height: 29px
+    color: $white
+    font-family: $fonttitle
+    margin-bottom: 70px
+
+.reviews_item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 45px 30px
+    width: 270px
+    min-height: 300px
+    border: 1px solid #C5AC2D
+    text-align: center
+
+.reviews_item-title
+    font-family: $fonttitle
+    font-size: 24px
+    line-height: 29px
+    color: $white
+    text-align: center
+    margin-bottom: 50px
+
+.reviews_item-text
+    text-align: center
+
+.top_slider-pag
+    display: flex
+    flex-direction: row
+
+.top_slider-pag
+    .swiper-pagination-bullet
+        background: #C5AC2D
+        opacity: 1
+        &-active
+            width: 16px
+            height: 16px
+
+.feedback
+    padding: 100px 0
+
+.feedback_wraper
+    display: flex
+    align-items: center
+
+.feedback_imgages
+    width: 50%
+
+.feedback_title
+    font-family: $fonttitle
+    font-size: 24px
+    line-height: 29px
+    font-weight: 500
+    margin-bottom: 5px
+
+.feedback_text
+    margin-bottom: 30px
+    color: $dark
+
+.feedback_form
+    width: 415px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    position: relative
+
+.feedback_input
+    display: block
+    padding: 20px 0
+    width: 100%
+    border: none
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+    &::placeholder
+        line-height: 19px
+        font-size: 16px
+        color: $dark
+        font-family: 'Roboto Condensed', sans-serif
+
+.feedback_btn
+    text-transform: uppercase
+    color: $white
+    border: none
+    display: inline-block
+    background-color: $accent
+    margin-top: 50px
+    font-size: 16px
+    line-height: 19px
+    max-width: 200px
+    height: 50px
+    transition: .5s
+    &:hover
+        @extend %top_hover
+
+.footer
+    background-color: $branded
+    padding-top: 80px
+
+.footer_top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 35px
+
+.footer_bottom
+    display: flex
+    justify-content: center
+    padding-bottom: 10px
+
+.socail_item-links
+    margin-left: 30px
+
+.social_item-images
+    &:hover
+        transform: scale(1.3)
+
+.menu_btn
+    display: none
+
+@media (max-width: 1000px)
+@media (max-width: 860px)
+    .header_menu
+        order: 1
+    .menu_list
+        display: block
+        position: absolute
+        top: 100px
+        left: 0
+        right: 0
+        background-color: $branded
+        padding: 20px 0
+        transform: translateY(-500px)
+        transition: all .5s
+    .menu_list.menu_list--active
+        transform: translateY(0px)
+    .menu_list-link
+        padding: 20px 0
+        display: block
+        text-align: center
+    .menu_btn
+        display: block
+        width: 30px
+        height: 25px
+        border: none
+        cursor: pointer 
+        border-top: 2px solid #fefefe
+        border-bottom: 2px solid #fefefe
+        background-color: transparent
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 30px
+            height: 2px
+            background-color: #fefefe
+            left: 0
+            top: 9px
+
+
+    
+
+

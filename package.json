@@ -1,0 +1,24 @@
+{
+  "name": "parcel-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html -p 3000 --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build index.html",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fancybox": "^3.0.1",
+    "jquery": "^3.5.1",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.8",
+    "swiper": "^6.4.15"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
