@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html -p 3000 --open",
     "clean": "rm -rf dist/*",
-    "build:parcel": "parcel build index.html",
+    "build:parcel": "parcel build index.html --target electron --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
   "author": "",
